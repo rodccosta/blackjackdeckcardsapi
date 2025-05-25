@@ -15,8 +15,8 @@ def desenharMao(player):
         col = cols[i%quantidade]
         with col:
             st.image(carta['image'],use_container_width=False)
-            if (i+1)%quantidade == 0:
-                cols = st.columns(len(Cartas))
+        if (i+1)%quantidade == 0:
+            cols = st.columns(len(Cartas))
 
     st.markdown("---")
     st.write(player+" "+cards.pontuacao(Cartas))
